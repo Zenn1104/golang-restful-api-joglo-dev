@@ -1,0 +1,1 @@
+web: bin/restful-api-joglo-dev

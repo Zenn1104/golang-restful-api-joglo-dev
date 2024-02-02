@@ -1,3 +1,5 @@
+// +heroku goVersion go1.11
+
 module restful-api-joglo-dev
 
 go 1.21.5
