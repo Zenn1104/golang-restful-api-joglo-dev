@@ -1,0 +1,52 @@
+
+GET http://127.0.0.1:8080/api/user
+x-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZGRyZXNzIjoiSmwuIE51c2FudGFyYSIsImVtYWlsIjoibWVsYW5pQGdtYWlsLmNvbSIsImV4cCI6MTcwNjMzNDU0NSwibmFtZSI6Ik1lbGFuaSBFdmFuIiwicm9sZSI6ImFkbWluIn0.RxFTGrfDVBn5YVhq0bB6BfD7-XEqb0o0t7FFFZgjzqY
+
+###
+POST http://127.0.0.1:8080/api/user
+Content-Type: application/json
+Accept: application/json
+
+{
+    "name" : "Renata",
+    "email" : "renata@gmail.com",
+    "password" : "secret",
+    "address" : "Jl. Nusantara",
+    "phone" : "+62828903444"
+}
+
+###
+GET http://127.0.0.1:8080/api/user/1
+
+###
+PUT  http://127.0.0.1:8080/api/user/1
+Content-Type: application/json
+Accept: application/json
+
+{
+    "name" : "Evangelina",
+    "address" : "Jl. Veteran",
+    "phone" : "+628397800099"
+}
+
+###
+PUT  http://127.0.0.1:8080/api/user/1/email
+Content-Type: application/json
+Accept: application/json
+
+{
+    "email" : "veve@gmail.com"
+}
+
+###
+DELETE http://127.0.0.1:8080/api/user/1
+
+###
+POST http://127.0.0.1:8080/api/user/login
+Content-Type: application/json
+Accept: application/json
+
+{
+    "email" : "melani@gmail.com",
+    "password" : "sectret"
+}
